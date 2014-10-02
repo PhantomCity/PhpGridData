@@ -9,4 +9,14 @@ function GetGridValuesList($List, $AttrName)
   return $lst;
 }
 
+function GetPreorderList($List, $Order)
+{
+  $res = new Array();
+  foreach($Order as $oi)
+  if (isset($List[ $oi ]))
+    array_push($res, $oi);
+  return $res;
+}
+
+
 ?>
